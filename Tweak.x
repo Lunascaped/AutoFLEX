@@ -34,7 +34,7 @@ __attribute__((visibility("hidden")))
 
 -(void)inject {
 	NSLog(@"Openning explorer: %@", [GetFLEXedOn sharedManager]);
-	[[FLEXManager sharedManager] showExplorer];
+	[[GetFLEXedOn sharedManager] showExplorer];
 }
 @end
 
@@ -46,7 +46,7 @@ __attribute__((visibility("hidden")))
 }
 
 -(void) inject: (UILongPressGestureRecognizer*)lges {
-    [[FLEXManager sharedManager] showExplorer];
+    [[GetFLEXedOn sharedManager] showExplorer];
 }
 %end
 
