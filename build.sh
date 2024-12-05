@@ -17,7 +17,7 @@ sed -i '' '65s/std::atomic<preopt_cache_t \*> _originalPreoptCache;/preopt_cache
 
 # Rename all occurrences of FLEXManager to FLEXManagerTwo in src/
 echo "Renaming FLEXManager to GetFLEXedOn..."
-find src/ -type f -exec sed -i '' 's/\bFLEXManager\b/GetFlexedOn/g' {} +
+find src/ -type f -exec sed -i '' 's/\bFLEXManager\b/GetFLEXedOn/g' {} +
 
 echo "Building package..."
 make package
