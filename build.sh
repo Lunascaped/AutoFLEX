@@ -17,7 +17,7 @@ sed -i '' '65s/std::atomic<preopt_cache_t \*> _originalPreoptCache;/preopt_cache
 
 # Rename all occurrences of FLEXManager to FLEXManagerTwo in src/
 echo "Renaming FLEXManager to GetFLEXedOn..."
-find src/ -type f -exec sed -i '' 's/\bFLEXManager\b/GetFLEXedOn/g' {} +
+find src/ -type f -exec sed -i '' 's/FLEXManager/GetFLEXedOn/g' {} +
 
 # Rename files with FLEXManager in their names to GetFLEXedOn
 echo "Renaming files with FLEXManager in their names..."
