@@ -2,7 +2,7 @@
 #import <UIKit/UIKit.h>
 #include <notify.h>
 #include <objc/message.h>
-#import "FLEXManager.h"
+#import "GetFLEXedOn.h"
 
 @interface UIStatusBarWindow : UIWindow @end
 
@@ -33,7 +33,7 @@ __attribute__((visibility("hidden")))
 }
 
 -(void)inject {
-	NSLog(@"Openning explorer: %@", [FLEXManager sharedManager]);
+	NSLog(@"Openning explorer: %@", [GetFLEXedOn sharedManager]);
 	[[FLEXManager sharedManager] showExplorer];
 }
 @end
